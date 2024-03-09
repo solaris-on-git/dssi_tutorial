@@ -1,7 +1,7 @@
 from joblib import dump, load
 import pandas as pd
 import numpy as np
-from data_processor import log_txf, remap_emp_length
+from .data_processor import log_txf, remap_emp_length
 
 def get_prediction(**kwargs):
     clf = load('models/mdl.joblib')
